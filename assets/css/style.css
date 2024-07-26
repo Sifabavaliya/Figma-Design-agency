@@ -37,17 +37,17 @@
     height: 20px;
 }
 
+
+/* start navigation */
+
 header{
     background: var(--light-bg);
 }
 
-/* start navigation */
-
-
 .main-navigation nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 14px;
+    padding-top: 16px;
 }
 
 .main-naviagtion--left {
@@ -80,7 +80,6 @@ nav ul li a span img{
     padding: 11px 33px;
     border-radius: 5px;
     background: var(--light-blue);
-    /* box-shadow: 0 4px 4px #000; */
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -131,10 +130,7 @@ section.banner-section{
 } 
 
 .service-section--center {
-    /* max-width: 589px; */
-    /* margin: 21px auto; */
     text-align: center;
-    /* padding: 12px 44px; */
 }
 
 .service-section--center h2{
@@ -162,14 +158,11 @@ section.banner-section{
 
 .card-img{
     text-align: center;
-    /* margin: 10px auto; */
     padding: 60px 0px 42px;
 }
 
 .service-section--wrapper .card{
-    /* display: flex; */
     text-align: center;
-    /* margin: 3px 12px; */
     padding: 0px 26px;
 }
 
@@ -189,7 +182,6 @@ section.banner-section{
 }
 
 .card-desc {
-    /* padding: 11px; */
     line-height: 20px;
     text-align: center;
 }
@@ -207,7 +199,6 @@ section.banner-section{
     font-size: 17px;
     line-height: 19px;
     letter-spacing: -0.2px;
-    /* margin: 15px; */
     color: white;
 }
 
@@ -274,7 +265,6 @@ span.arrow{
 
 .left-about img{
     margin-top: 85px;
-    /* margin-right: 70px; */
 }
 
 .about-section--right{
@@ -294,15 +284,12 @@ span.arrow{
 }
 
 .story-description {
-    /* position: relative; */
-    /* bottom: 10px; */
     font-size: 17px;
     line-height: 28px;
     letter-spacing: -0.2px;
-    /* word-spacing: 4.2px; */
 }
 
-/*start FACTS SECTION */
+/*start fact section */
 
 .fact-container{
     margin: 59px auto 59px;
@@ -311,8 +298,6 @@ span.arrow{
 
 .fact-section--wrappper {
     display: flex;
-    /* max-width: 1074px; */
-    /* margin: 50px auto; */
     text-align: center;
     align-items: center;
     padding: 33px;
@@ -335,7 +320,6 @@ span.arrow{
 /*start features section */
 
 section.features-section {
-    /* padding: 25px; */
     background: var(--light-bg);
     position: relative;
 }
@@ -345,10 +329,6 @@ section.features-section::after{
     position: absolute;
     left: 0px;
     top: 94px;
-}
-
-.feature-container{
-    /* margin: 30px auto 30px; */
 }
 
 .feature-section__description {
@@ -446,10 +426,6 @@ section.launch-section{
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    /* flex-wrap: wrap; */
-    /* margin:70px auto; */
-    /* gap: 70px; */
-    /* max-width: 1070px; */
 }
 
 .product-img1 img {
@@ -473,7 +449,6 @@ section.launch-section{
 }
 
 .product-description{
-    /* text-align: center; */
     padding:10px ;
 }
 
@@ -491,10 +466,6 @@ section.launch-section{
 }
 
 .about-cta{
-    /* position: relative; */
-    /* bottom: 187px; */
-    /* text-align: center; */
-    /* display: block; */
     margin-bottom: 30px;
 }
 
@@ -525,7 +496,6 @@ section.testimonials-section{
     font-size: 13px;
     letter-spacing: 1.63px;
     font-family: "gilroy-bold";
-    /* padding-bottom: 35px; */
 }
 
 .testimonials p{
@@ -585,8 +555,6 @@ footer{
     justify-content: space-evenly;
     align-items: baseline;
     padding: 30px 15px;
-    /* margin-top: 25px; */
-
 }
 
 .info p {
