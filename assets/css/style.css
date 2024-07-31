@@ -1,4 +1,3 @@
-
 :root{
     --light-bg:rgba(244, 247, 250, 1);
     --green:rgba(104, 213, 133, 1);
@@ -6,17 +5,21 @@
     --red:rgba(255, 113, 113, 1);
     --light-blue:rgba(71, 59, 240, 1);
     --dark-blue:rgba(22, 28, 45, 1);
-
 }
 
-
-
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'gilroy-regular';
+}
+
+body {
+    font-family: "gilroy-regular";
     color: var(--dark-blue);
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .container{
@@ -27,7 +30,7 @@
 
 .dec p{
     color: rgba(246, 75, 75, 1);
-    font-family: 'gilroy-bold';
+    font-family: "gilroy-bold";
     font-size: 13px;
     line-height: auto;
     letter-spacing: 1.64px;
@@ -36,7 +39,6 @@
 .icon img{
     height: 20px;
 }
-
 
 /* start navigation */
 
@@ -68,7 +70,7 @@ header{
 
 nav ul li a{
     text-decoration: none;
-    font-family: 'gilroy-bold';
+    font-family: "gilroy-bold";
     font-size: 15px;
 }
 
@@ -84,10 +86,10 @@ nav ul li a span img{
     color: white;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'gilroy-bold';
+    font-family: "gilroy-bold";
     letter-spacing: -0.5px;
+    white-space: nowrap;
 }
-
 
 /*start Banner section */
 
@@ -99,6 +101,7 @@ section.banner-section{
     display: flex;
     justify-content: space-evenly;
     padding: 70px 0px 50px;
+    gap: 30px;
 }
 
 .banner-container--left{
@@ -108,8 +111,8 @@ section.banner-section{
 
 .banner-container--left h1{
     font-size: 60px;
-    font-family: 'gilroy-bold';
-    line-height: 65px;
+    font-family: "gilroy-bold";
+    line-height: 1em;
     letter-spacing: -2px;
     margin: 25px 0px;
 }
@@ -123,10 +126,8 @@ section.banner-section{
 
 /* start service section */
 
-
 .service-container {
     padding: 39px 30px;
-    height: 752px;
 } 
 
 .service-section--center {
@@ -239,7 +240,7 @@ span.arrow{
 
 .testi-desc p {
     font-size: 24px;
-    font-family: 'gilroy-bold';
+    font-family: "gilroy-bold";
     line-height: 34px;
     letter-spacing: -0.5px;
     margin: 15px 0px;
@@ -293,7 +294,6 @@ span.arrow{
 
 .fact-container{
     margin: 59px auto 59px;
-
 }
 
 .fact-section--wrappper {
@@ -322,6 +322,7 @@ span.arrow{
 section.features-section {
     background: var(--light-bg);
     position: relative;
+    padding-bottom: 50px;
 }
 
 section.features-section::after{
@@ -392,6 +393,8 @@ section.launch-section{
     justify-content: space-evenly;
     align-items: center;
     padding: 79px 0px 95px;
+    gap: 30px;
+    border-top: 1px solid #e7e9ed;
 }
 
 .launch-container--left__description h3 {
@@ -460,7 +463,7 @@ section.launch-section{
 
 .product-description h4 {
     font-size: 24px;
-    font-family: 'gilroy-bold';
+    font-family: "gilroy-bold";
     line-height: 34px;
     letter-spacing: -0.5px;
 }
@@ -591,4 +594,178 @@ footer{
     color: white;
 }
 
+.main-navigation--right .menu-icon {
+    display: none;
+}
+
+@media (max-width: 1219px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-navigation .main-naviagtion--left ul {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #fff;
+        padding: 20px;
+        flex-direction: column;
+        min-width: 200px;
+        right: 15px;
+        box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+    }
+    .main-navigation .main-naviagtion--left ul.show {
+        display: flex;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .main-navigation--right .menu-icon {
+        display: block;
+    }
+    .main-navigation--right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    svg {
+        width: 25px;
+    }
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+    .banner-container--right__image {
+        display: flex;
+        justify-content: center;
+    }
+    .banner-container--left h1 {
+        font-size: 36px;
+    }
+    .banner-container--left {
+        justify-content: center;
+    }
+
+    .banner-container--left__description {
+        text-align: center;
+    }
+
+    .service-section--wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-section--wrapper .card {
+        width: 100%;
+        max-width: 400px;
+    }
+    .testimonial-section-wrapper {
+        gap: 30px;
+    }
+    .testimonial-section--right__description span.icon {
+        margin-left: 0;
+    }
+    .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-about img {
+        margin-top: 0;
+    }
+
+    .right-about {
+        bottom: 10px;
+    }
+    .fact-section--wrappper {
+        flex-direction: column;
+    }
+
+    .features-section--container {
+        margin: 20px;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .links-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links ul {
+        padding: 0;
+    }
+
+    .links {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-navigation nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-top: 30px;
+    }
+    .testimonial-section-wrapper {
+    }
+
+    .testimonial-section-wrapper {
+        flex-direction: column;
+    }
+
+    .right-about {
+        position: static;
+        text-align: left;
+    }
+
+    .center-about img {
+        position: static;
+    }
+
+    .about-section--right {
+        width: auto;
+    }
+
+    section.features-section::after {
+        display: none;
+    }
+
+    .launch-container {
+        flex-direction: column;
+    }
+
+    .product-img1 img {
+        height: auto;
+    }
+
+    .product-img4 img {
+        height: auto;
+    }
+    .features-section--container {
+        flex-direction: column;
+    }
+
+    .features--section--container__description {
+        margin-left: 0;
+    }
+    .main-navigation .main-naviagtion--left ul {
+        top: 90px;
+    }
+
+    .main-navigation--right {
+        width: 100%;
+        justify-content: center;
+    }
+}
 /* end of footer */
